@@ -9,4 +9,4 @@ default[:blockstorage_lvm][:volume_size] = 100
 default[:blockstorage_lvm][:volume_group_name] = "vg00"
 default[:blockstorage_lvm][:logical_volume_name] = "blockstoragevolume"
 default[:blockstorage_lvm][:filesystem] = "ext4"
-default[:blockstorage_lvm][:mount_pount] = "/var/log"
+default[:blockstorage_lvm][:mount_point] = "/var/log"

@@ -42,6 +42,6 @@ lvm_volume_group node[:blockstorage_lvm][:volume_group_name] do
   logical_volume node[:blockstorage_lvm][:logical_volume_name] do
     size        '100%VG'
     filesystem  node[:blockstorage_lvm][:filesystem]
-    mount_point node[:blockstorage_lvm][:mount_pount]
+    mount_point node[:blockstorage_lvm][:mount_point]
   end
  end

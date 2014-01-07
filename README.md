@@ -17,7 +17,7 @@ LVM attributes
 * `default[:blockstorage_lvm][:volume_group_name]` - The name of the LVM volume group
 * `default[:blockstorage_lvm][:logical_volume_name]` - The name of the logical volume to be created
 * `default[:blockstorage_lvm][:filesystem]` - The type of file system to create on the logical volume,  "ext4"
-* `default[:blockstorage_lvm][:mount_pount]` = The mount point for the logical volume
+* `default[:blockstorage_lvm][:mount_point]` = The mount point for the logical volume
 
 # Author
 
