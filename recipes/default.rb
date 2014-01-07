@@ -26,8 +26,8 @@ rackspace_api_key = rackspace["rackspace_api_key"]
 
 (1..node[:blockstorage_lvm][:no_volumes]).each do |vol_number|
   rackspacecloud_cbs "#{node[:hostname]}-#{vol_number}" do
-	  type "SATA"
-	  size 100
+	  type node[:blockstorage_lvm][:volume_type]
+	  size node[:blockstorage_lvm][:volume_size]
 	  rackspace_username rackspace_username
 	  rackspace_api_key rackspace_api_key
 	  rackspace_region "#{node[:rackspace][:cloud][:region]}"
