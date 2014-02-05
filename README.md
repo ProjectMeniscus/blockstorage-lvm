@@ -4,6 +4,9 @@ A cookbook that provisions Rackspace Cloud Block Storage devices and then uses L
 
 # Attributes
 
+* `default[:blockstorage_lvm][:data_bag_name]` - Name of databag to pull rackspace credentials
+* `default[:blockstorage_lvm][:data_bag_item]` - Name of databag item with Rackspace credentials
+
 * `default[:rackspace][:cloud][:region]` - The rackspace datacenter in which to provision the storage
 
 Rackspace Cloud Block Storage attributes

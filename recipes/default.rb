@@ -20,7 +20,8 @@
 include_recipe 'rackspacecloud'
 include_recipe 'lvm'
 
-rackspace = data_bag_item("rackspace", "cloud")
+rackspace = data_bag_item(node[:blockstorage_lvm][:data_bag_name], node[:blockstorage_lvm][:data_bag_item])
+
 rackspace_username = rackspace["rackspace_username"]
 rackspace_api_key = rackspace["rackspace_api_key"]
 
